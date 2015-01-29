@@ -45,17 +45,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=floatingPin.c initUART.c initADC.c
+SOURCEFILES_QUOTED_IF_SPACED=floatingPin.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/floatingPin.o ${OBJECTDIR}/initUART.o ${OBJECTDIR}/initADC.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/floatingPin.o.d ${OBJECTDIR}/initUART.o.d ${OBJECTDIR}/initADC.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/floatingPin.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/floatingPin.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/floatingPin.o ${OBJECTDIR}/initUART.o ${OBJECTDIR}/initADC.o
+OBJECTFILES=${OBJECTDIR}/floatingPin.o
 
 # Source Files
-SOURCEFILES=floatingPin.c initUART.c initADC.c
+SOURCEFILES=floatingPin.c
 
 
 CFLAGS=
@@ -86,20 +86,6 @@ ${OBJECTDIR}/floatingPin.o: floatingPin.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE)  floatingPin.c  -o ${OBJECTDIR}/floatingPin.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/floatingPin.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
 	@${FIXDEPS} "${OBJECTDIR}/floatingPin.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/initUART.o: initUART.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/initUART.o.d 
-	@${RM} ${OBJECTDIR}/initUART.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  initUART.c  -o ${OBJECTDIR}/initUART.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/initUART.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/initUART.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/initADC.o: initADC.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/initADC.o.d 
-	@${RM} ${OBJECTDIR}/initADC.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  initADC.c  -o ${OBJECTDIR}/initADC.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/initADC.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/initADC.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
 else
 ${OBJECTDIR}/floatingPin.o: floatingPin.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
@@ -107,20 +93,6 @@ ${OBJECTDIR}/floatingPin.o: floatingPin.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/floatingPin.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  floatingPin.c  -o ${OBJECTDIR}/floatingPin.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/floatingPin.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
 	@${FIXDEPS} "${OBJECTDIR}/floatingPin.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/initUART.o: initUART.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/initUART.o.d 
-	@${RM} ${OBJECTDIR}/initUART.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  initUART.c  -o ${OBJECTDIR}/initUART.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/initUART.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/initUART.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/initADC.o: initADC.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/initADC.o.d 
-	@${RM} ${OBJECTDIR}/initADC.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  initADC.c  -o ${OBJECTDIR}/initADC.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/initADC.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/initADC.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 endif
 
