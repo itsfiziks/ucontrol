@@ -8,3 +8,6 @@ ucontrol
 <b>demoLecture4-nonCN</b> -- Showing that it takes non-zero time for a pin to become 'high' or 'low'.<br>
 <b>demoLecture4-CN</b> -- Use a CN interrupt to capture the change of a value on a pin.<br>
 <b>demoLecture4-LEDs</b> -- Use an FSM and CN Interrupt to change LEDs on a button press.<br>
+<b>demoLecture5-timedLED</b> -- Blinking an LED using a timer interrupt.<br>
+<b>demoLecture5-delayLED</b> -- Blinking and LED using a timer delay.<br>
+<b>demoLecture5-DDR</b> -- The famous one-button DDR.<br>
