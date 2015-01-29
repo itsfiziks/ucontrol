@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   initUART.h
  * Author: user
  *

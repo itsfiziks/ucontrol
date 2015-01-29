@@ -2,7 +2,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>demoLecture5-DDR2</name>
+            <name>demoLecture5-DDR</name>
             <creation-uuid>68272e25-333e-4517-951f-7390269f4741</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>

@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=demoLecture5-DDR2.X
+PROJECTNAME=demoLecture5-DDR.X
 
 # Active Configuration
 DEFAULTCONF=default

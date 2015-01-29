@@ -4,7 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>../../../../../Program Files (x86)/Microchip/xc16/v1.23/support/PIC24F/h/p24FJ16GA002.h</itemPath>
+      <itemPath>../../../../../../../Program Files (x86)/Microchip/xc16/v1.21/support/PIC24F/h/p24FJ64GA002.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"

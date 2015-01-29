@@ -30,12 +30,12 @@ ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 IMAGE_TYPE=debug
 OUTPUT_SUFFIX=elf
 DEBUGGABLE_SUFFIX=elf
-FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/demoLecture5-DDR2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/demoLecture5-DDR.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 else
 IMAGE_TYPE=production
 OUTPUT_SUFFIX=hex
 DEBUGGABLE_SUFFIX=elf
-FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/demoLecture5-DDR2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/demoLecture5-DDR.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 endif
 
 # Object Directory
@@ -45,17 +45,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED="../../../OneDrive/School/ECE 372a F14/Labs/PIC24F Examples/oneButtonDDR.c" initUART.c timer.c initSW1.c
+SOURCEFILES_QUOTED_IF_SPACED=initUART.c timer.c initSW1.c demoLecture5-oneButtonDDR.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/500162049/oneButtonDDR.o ${OBJECTDIR}/initUART.o ${OBJECTDIR}/timer.o ${OBJECTDIR}/initSW1.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/500162049/oneButtonDDR.o.d ${OBJECTDIR}/initUART.o.d ${OBJECTDIR}/timer.o.d ${OBJECTDIR}/initSW1.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/initUART.o ${OBJECTDIR}/timer.o ${OBJECTDIR}/initSW1.o ${OBJECTDIR}/demoLecture5-oneButtonDDR.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/initUART.o.d ${OBJECTDIR}/timer.o.d ${OBJECTDIR}/initSW1.o.d ${OBJECTDIR}/demoLecture5-oneButtonDDR.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/500162049/oneButtonDDR.o ${OBJECTDIR}/initUART.o ${OBJECTDIR}/timer.o ${OBJECTDIR}/initSW1.o
+OBJECTFILES=${OBJECTDIR}/initUART.o ${OBJECTDIR}/timer.o ${OBJECTDIR}/initSW1.o ${OBJECTDIR}/demoLecture5-oneButtonDDR.o
 
 # Source Files
-SOURCEFILES=../../../OneDrive/School/ECE 372a F14/Labs/PIC24F Examples/oneButtonDDR.c initUART.c timer.c initSW1.c
+SOURCEFILES=initUART.c timer.c initSW1.c demoLecture5-oneButtonDDR.c
 
 
 CFLAGS=
@@ -72,20 +72,13 @@ LDLIBSOPTIONS=
 FIXDEPS=fixDeps
 
 .build-conf:  ${BUILD_SUBPROJECTS}
-	${MAKE}  -f nbproject/Makefile-default.mk dist/${CND_CONF}/${IMAGE_TYPE}/demoLecture5-DDR2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+	${MAKE}  -f nbproject/Makefile-default.mk dist/${CND_CONF}/${IMAGE_TYPE}/demoLecture5-DDR.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 
 MP_PROCESSOR_OPTION=24FJ64GA002
 MP_LINKER_FILE_OPTION=,--script=p24FJ64GA002.gld
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/_ext/500162049/oneButtonDDR.o: ../../../OneDrive/School/ECE\ 372a\ F14/Labs/PIC24F\ Examples/oneButtonDDR.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/500162049 
-	@${RM} ${OBJECTDIR}/_ext/500162049/oneButtonDDR.o.d 
-	@${RM} ${OBJECTDIR}/_ext/500162049/oneButtonDDR.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  "../../../OneDrive/School/ECE 372a F14/Labs/PIC24F Examples/oneButtonDDR.c"  -o ${OBJECTDIR}/_ext/500162049/oneButtonDDR.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/500162049/oneButtonDDR.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/_ext/500162049/oneButtonDDR.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
 ${OBJECTDIR}/initUART.o: initUART.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/initUART.o.d 
@@ -107,14 +100,14 @@ ${OBJECTDIR}/initSW1.o: initSW1.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE)  initSW1.c  -o ${OBJECTDIR}/initSW1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/initSW1.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
 	@${FIXDEPS} "${OBJECTDIR}/initSW1.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-else
-${OBJECTDIR}/_ext/500162049/oneButtonDDR.o: ../../../OneDrive/School/ECE\ 372a\ F14/Labs/PIC24F\ Examples/oneButtonDDR.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/500162049 
-	@${RM} ${OBJECTDIR}/_ext/500162049/oneButtonDDR.o.d 
-	@${RM} ${OBJECTDIR}/_ext/500162049/oneButtonDDR.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  "../../../OneDrive/School/ECE 372a F14/Labs/PIC24F Examples/oneButtonDDR.c"  -o ${OBJECTDIR}/_ext/500162049/oneButtonDDR.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/500162049/oneButtonDDR.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/_ext/500162049/oneButtonDDR.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+${OBJECTDIR}/demoLecture5-oneButtonDDR.o: demoLecture5-oneButtonDDR.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/demoLecture5-oneButtonDDR.o.d 
+	@${RM} ${OBJECTDIR}/demoLecture5-oneButtonDDR.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  demoLecture5-oneButtonDDR.c  -o ${OBJECTDIR}/demoLecture5-oneButtonDDR.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/demoLecture5-oneButtonDDR.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+	@${FIXDEPS} "${OBJECTDIR}/demoLecture5-oneButtonDDR.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
+else
 ${OBJECTDIR}/initUART.o: initUART.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/initUART.o.d 
@@ -136,6 +129,13 @@ ${OBJECTDIR}/initSW1.o: initSW1.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE)  initSW1.c  -o ${OBJECTDIR}/initSW1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/initSW1.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
 	@${FIXDEPS} "${OBJECTDIR}/initSW1.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
+${OBJECTDIR}/demoLecture5-oneButtonDDR.o: demoLecture5-oneButtonDDR.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/demoLecture5-oneButtonDDR.o.d 
+	@${RM} ${OBJECTDIR}/demoLecture5-oneButtonDDR.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  demoLecture5-oneButtonDDR.c  -o ${OBJECTDIR}/demoLecture5-oneButtonDDR.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/demoLecture5-oneButtonDDR.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+	@${FIXDEPS} "${OBJECTDIR}/demoLecture5-oneButtonDDR.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
 endif
 
 # ------------------------------------------------------------------------------------
@@ -153,15 +153,15 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: link
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-dist/${CND_CONF}/${IMAGE_TYPE}/demoLecture5-DDR2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
+dist/${CND_CONF}/${IMAGE_TYPE}/demoLecture5-DDR.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE)  -o dist/${CND_CONF}/${IMAGE_TYPE}/demoLecture5-DDR2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -mcpu=$(MP_PROCESSOR_OPTION)        -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -omf=elf -Wl,,--defsym=__MPLAB_BUILD=1,--defsym=__ICD2RAM=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_PK3=1,$(MP_LINKER_FILE_OPTION),--stack=16,--check-sections,--data-init,--pack-data,--handles,--isr,--no-gc-sections,--fill-upper=0,--stackguard=16,--no-force-link,--smart-io,-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map",--report-mem$(MP_EXTRA_LD_POST) 
+	${MP_CC} $(MP_EXTRA_LD_PRE)  -o dist/${CND_CONF}/${IMAGE_TYPE}/demoLecture5-DDR.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -mcpu=$(MP_PROCESSOR_OPTION)        -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -omf=elf -Wl,,--defsym=__MPLAB_BUILD=1,--defsym=__ICD2RAM=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_PK3=1,$(MP_LINKER_FILE_OPTION),--stack=16,--check-sections,--data-init,--pack-data,--handles,--isr,--no-gc-sections,--fill-upper=0,--stackguard=16,--no-force-link,--smart-io,-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map",--report-mem$(MP_EXTRA_LD_POST) 
 	
 else
-dist/${CND_CONF}/${IMAGE_TYPE}/demoLecture5-DDR2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
+dist/${CND_CONF}/${IMAGE_TYPE}/demoLecture5-DDR.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE)  -o dist/${CND_CONF}/${IMAGE_TYPE}/demoLecture5-DDR2.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -mcpu=$(MP_PROCESSOR_OPTION)        -omf=elf -Wl,,--defsym=__MPLAB_BUILD=1,$(MP_LINKER_FILE_OPTION),--stack=16,--check-sections,--data-init,--pack-data,--handles,--isr,--no-gc-sections,--fill-upper=0,--stackguard=16,--no-force-link,--smart-io,-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map",--report-mem$(MP_EXTRA_LD_POST) 
-	${MP_CC_DIR}\\xc16-bin2hex dist/${CND_CONF}/${IMAGE_TYPE}/demoLecture5-DDR2.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX} -a  -omf=elf  
+	${MP_CC} $(MP_EXTRA_LD_PRE)  -o dist/${CND_CONF}/${IMAGE_TYPE}/demoLecture5-DDR.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -mcpu=$(MP_PROCESSOR_OPTION)        -omf=elf -Wl,,--defsym=__MPLAB_BUILD=1,$(MP_LINKER_FILE_OPTION),--stack=16,--check-sections,--data-init,--pack-data,--handles,--isr,--no-gc-sections,--fill-upper=0,--stackguard=16,--no-force-link,--smart-io,-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map",--report-mem$(MP_EXTRA_LD_POST) 
+	${MP_CC_DIR}\\xc16-bin2hex dist/${CND_CONF}/${IMAGE_TYPE}/demoLecture5-DDR.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX} -a  -omf=elf  
 	
 endif
 

@@ -1,6 +1,6 @@
-/* 
+/*
  * File:   initSW1.h
- * Author: user
+ * Author: Garrett Vanhoy
  *
  * Created on January 29, 2015, 9:20 AM
  */
