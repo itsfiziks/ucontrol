@@ -22,8 +22,8 @@ _CONFIG2( IESO_OFF & SOSCSEL_SOSC & WUTSEL_LEG & FNOSC_PRIPLL & FCKSM_CSDCMD & O
 #define RELEASED 1
 int main(void)
 {
-    TRISBbits.TRISB5 = 0; // pin 14, switch 1, output
-    TRISBbits.TRISB15 = 1; // pin 26, led 4, input
+    TRISBbits.TRISB5 = 1; // pin 14, switch 1, input
+    TRISBbits.TRISB15 = 0; // pin 26, led 4, output
 
     while(1){
         // Turn off the LED if the switch is pressed. Turn it on otherwise.
