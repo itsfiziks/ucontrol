@@ -11,3 +11,5 @@ ucontrol
 <b>demoLecture5-timedLED</b> -- Blinking an LED using a timer interrupt.<br>
 <b>demoLecture5-delayLED</b> -- Blinking and LED using a timer delay.<br>
 <b>demoLecture5-DDR</b> -- The famous one-button DDR.<br>
+<b>demoLecture6-LCD</b> -- Introducing some of the LCD functions. This program will not work on its own.<br>
+<b>demoLecture7-32BitTimer<b> -- Blink and LED with a 32-bit timer
