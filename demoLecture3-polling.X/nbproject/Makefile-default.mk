@@ -45,17 +45,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=demoLecture3.c
+SOURCEFILES_QUOTED_IF_SPACED=
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/demoLecture3.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/demoLecture3.o.d
+OBJECTFILES_QUOTED_IF_SPACED=
+POSSIBLE_DEPFILES=
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/demoLecture3.o
+OBJECTFILES=
 
 # Source Files
-SOURCEFILES=demoLecture3.c
+SOURCEFILES=
 
 
 CFLAGS=
@@ -79,6 +79,7 @@ MP_LINKER_FILE_OPTION=,--script=p24FJ64GA002.gld
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
+<<<<<<< HEAD
 ${OBJECTDIR}/demoLecture3.o: demoLecture3.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/demoLecture3.o.d 
@@ -94,6 +95,9 @@ ${OBJECTDIR}/demoLecture3.o: demoLecture3.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE)  demoLecture3.c  -o ${OBJECTDIR}/demoLecture3.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/demoLecture3.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
 	@${FIXDEPS} "${OBJECTDIR}/demoLecture3.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
+=======
+else
+>>>>>>> fd3a81db4f4b79888a6eae192980f91627a8342c
 endif
 
 # ------------------------------------------------------------------------------------
