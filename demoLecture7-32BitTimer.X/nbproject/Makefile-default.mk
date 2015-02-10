@@ -45,17 +45,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=demoLecture2.c timer.c
+SOURCEFILES_QUOTED_IF_SPACED=timer.c demoLecture7-32BitTimer.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/demoLecture2.o ${OBJECTDIR}/timer.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/demoLecture2.o.d ${OBJECTDIR}/timer.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/timer.o ${OBJECTDIR}/demoLecture7-32BitTimer.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/timer.o.d ${OBJECTDIR}/demoLecture7-32BitTimer.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/demoLecture2.o ${OBJECTDIR}/timer.o
+OBJECTFILES=${OBJECTDIR}/timer.o ${OBJECTDIR}/demoLecture7-32BitTimer.o
 
 # Source Files
-SOURCEFILES=demoLecture2.c timer.c
+SOURCEFILES=timer.c demoLecture7-32BitTimer.c
 
 
 CFLAGS=
@@ -79,13 +79,6 @@ MP_LINKER_FILE_OPTION=,--script=p24FJ64GA002.gld
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/demoLecture2.o: demoLecture2.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/demoLecture2.o.d 
-	@${RM} ${OBJECTDIR}/demoLecture2.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  demoLecture2.c  -o ${OBJECTDIR}/demoLecture2.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/demoLecture2.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/demoLecture2.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
 ${OBJECTDIR}/timer.o: timer.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/timer.o.d 
@@ -93,20 +86,27 @@ ${OBJECTDIR}/timer.o: timer.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE)  timer.c  -o ${OBJECTDIR}/timer.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/timer.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
 	@${FIXDEPS} "${OBJECTDIR}/timer.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-else
-${OBJECTDIR}/demoLecture2.o: demoLecture2.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/demoLecture7-32BitTimer.o: demoLecture7-32BitTimer.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/demoLecture2.o.d 
-	@${RM} ${OBJECTDIR}/demoLecture2.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  demoLecture2.c  -o ${OBJECTDIR}/demoLecture2.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/demoLecture2.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/demoLecture2.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	@${RM} ${OBJECTDIR}/demoLecture7-32BitTimer.o.d 
+	@${RM} ${OBJECTDIR}/demoLecture7-32BitTimer.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  demoLecture7-32BitTimer.c  -o ${OBJECTDIR}/demoLecture7-32BitTimer.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/demoLecture7-32BitTimer.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+	@${FIXDEPS} "${OBJECTDIR}/demoLecture7-32BitTimer.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
+else
 ${OBJECTDIR}/timer.o: timer.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/timer.o.d 
 	@${RM} ${OBJECTDIR}/timer.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  timer.c  -o ${OBJECTDIR}/timer.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/timer.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
 	@${FIXDEPS} "${OBJECTDIR}/timer.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/demoLecture7-32BitTimer.o: demoLecture7-32BitTimer.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/demoLecture7-32BitTimer.o.d 
+	@${RM} ${OBJECTDIR}/demoLecture7-32BitTimer.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  demoLecture7-32BitTimer.c  -o ${OBJECTDIR}/demoLecture7-32BitTimer.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/demoLecture7-32BitTimer.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+	@${FIXDEPS} "${OBJECTDIR}/demoLecture7-32BitTimer.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 endif
 

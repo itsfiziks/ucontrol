@@ -79,24 +79,8 @@ MP_LINKER_FILE_OPTION=,--script=p24FJ64GA002.gld
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-<<<<<<< HEAD
-${OBJECTDIR}/demoLecture3.o: demoLecture3.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/demoLecture3.o.d 
-	@${RM} ${OBJECTDIR}/demoLecture3.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  demoLecture3.c  -o ${OBJECTDIR}/demoLecture3.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/demoLecture3.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/demoLecture3.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-else
-${OBJECTDIR}/demoLecture3.o: demoLecture3.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/demoLecture3.o.d 
-	@${RM} ${OBJECTDIR}/demoLecture3.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  demoLecture3.c  -o ${OBJECTDIR}/demoLecture3.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/demoLecture3.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/demoLecture3.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-=======
 ${OBJECTDIR}/demoLecture3-CN-ISR.o: demoLecture3-CN-ISR.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
+	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/demoLecture3-CN-ISR.o.d 
 	@${RM} ${OBJECTDIR}/demoLecture3-CN-ISR.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  demoLecture3-CN-ISR.c  -o ${OBJECTDIR}/demoLecture3-CN-ISR.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/demoLecture3-CN-ISR.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
@@ -104,12 +88,11 @@ ${OBJECTDIR}/demoLecture3-CN-ISR.o: demoLecture3-CN-ISR.c  nbproject/Makefile-${
 	
 else
 ${OBJECTDIR}/demoLecture3-CN-ISR.o: demoLecture3-CN-ISR.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
+	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/demoLecture3-CN-ISR.o.d 
 	@${RM} ${OBJECTDIR}/demoLecture3-CN-ISR.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  demoLecture3-CN-ISR.c  -o ${OBJECTDIR}/demoLecture3-CN-ISR.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/demoLecture3-CN-ISR.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
 	@${FIXDEPS} "${OBJECTDIR}/demoLecture3-CN-ISR.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
->>>>>>> fd3a81db4f4b79888a6eae192980f91627a8342c
 	
 endif
 
