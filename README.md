@@ -12,5 +12,10 @@ ucontrol
 <b>demoLecture5-delayLED</b> -- Blinking and LED using a timer delay.<br>
 <b>demoLecture5-DDR</b> -- The famous one-button DDR.<br>
 <b>demoLecture6-LCD</b> -- Introducing some of the LCD functions. This program will not work on its own.<br>
-<b>demoLecture7-32BitTimer</b> -- Blink and LED with a 32-bit timer
-<b>demoLecture8-keypad</b> -- DDR with a keypad. However, the keypad needs to be implemented.
+<b>demoLecture7-32BitTimer</b> -- Blink and LED with a 32-bit timer<br>
+<b>demoLecture8-keypad</b> -- DDR with a keypad. However, the keypad needs to be implemented.<br>
+<b>demoLecture9-UARTchat</b> -- Chatting between two UARTs. This code has not been tested.<br>
+<b>demoLecture10-UARTchat</b> -- UART testing demonstration. <br>
+<b>demoLecture11-oScope</b> -- This implements an ADC and PWM. The ADC can be used to make a primitive oscilloscope. <br>
+<b>demoLecture13-spi</b> -- This is a basic implementation of SPI. This must be modified to work with a particular device.<br>
+<b>demoLecture14-spi-acc</b> -- This is meant to use SPI to work with an accelerometer.<br>
