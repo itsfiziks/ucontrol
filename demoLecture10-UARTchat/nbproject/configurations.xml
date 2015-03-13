@@ -16,8 +16,8 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>uartComm.c</itemPath>
-      <itemPath>demoLecture9-UART.c</itemPath>
       <itemPath>timer.c</itemPath>
+      <itemPath>demoLecture10-UARTchat.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
